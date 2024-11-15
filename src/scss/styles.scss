@@ -1,3 +1,22 @@
-body {
-  background-color: hotpink;
-}
+// ****** SETTINGS: Overwrite Bootstrap SASS variables ******
+@import 'settings.bootstrap';
+
+// ****** GENERIC: Import all of Bootstrap's CSS ******
+@import 'bootstrap/scss/bootstrap';
+
+// Write your own SCSS
+// ****** ELEMENTS ******
+@import 'elements';
+// ****** COMPONENTS ******
+@import 'components.immo-card';
+@import 'components.nws-card';
+@import 'components.realtor';
+@import 'components.hero';
+@import 'components.categories';
+@import 'components.locations';
+@import 'components.review-card';
+@import 'components.footer';
+
+// ****** UTILITIES ******
+
+@import 'utilities';

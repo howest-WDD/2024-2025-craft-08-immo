@@ -1,0 +1,102 @@
+.c-immo-card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10rem;
+  background-color: white;
+  border: #e9e9e9 solid 1px;
+  border-radius: 1.2rem;
+  transition: transform 0.3s ease;
+  padding: 0.5rem;
+  position: relative;
+
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &__infocontainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+
+    & div {
+      display: flex;
+      flex-direction: row;
+    }
+
+    & p {
+      margin: 0;
+      
+    }
+  }
+
+  &__img {
+    border-radius: 1rem;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+
+  &__heading {
+    justify-content: space-between;
+  }
+  &__title {
+    color: #333;
+    margin-bottom: .5rem;
+  }
+
+  &__price {
+    color: #eb664e;
+  }
+
+  &__location {
+    font-weight: 200;
+    align-items: center;
+    gap: .5rem; 
+    margin-bottom: 1.5rem;
+    color: black;
+  }
+
+  &__details {
+    font-weight: 200;
+    font-size: .8rem;
+    gap: 1.5rem; 
+    color: black;
+    & div {
+      gap: .5rem;
+    }
+
+    & img {
+      width: 1rem;
+    }
+
+
+  }
+
+  &__tag {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    text-transform: uppercase;
+    color: white;
+    padding: .5rem 1rem; 
+    border-radius: 1.5rem ;
+
+    & p {
+      margin: 0; 
+      font-size: .8rem;
+      font-weight: 400;
+    }
+
+    &--sale {
+      background-color: #1F4B43;
+      
+    }
+
+    &--rent {
+      background-color: #E7C873;
+      color: #1F4B43;
+    }
+  }
+}

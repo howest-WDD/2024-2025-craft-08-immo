@@ -1,0 +1,23 @@
+.c-locations {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    padding-left: -2rem;
+
+    
+    & li {
+        list-style: none;
+      
+    }
+    & a {
+        color: black;
+        border-bottom: 2px rgba(0, 0, 0, 0) solid;
+        opacity: 0.5;
+        transition: opacity 0.3s ease;
+        transition: border-color 0.3s ease;
+
+        &:hover {
+            opacity: 1;
+            border-color: rgb(0, 0, 0)
+        }
+    }
+}

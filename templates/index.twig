@@ -1,12 +1,487 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Document</title>
-		{{ craft.vite.script('src/js/app.js', false) }}
-	</head>
-	<body>
-		Hello world from the template in the Vite Craft Starter
-	</body>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="description" content="" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Contrail+One&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+	<title>Just Home</title>
+	{{ craft.vite.script('src/js/app.js', false) }}
+</head>
+
+<body>
+	<div class="d-flex flex-column flex-md-row justify-content-between col-10 offset-1 align-items-center p-3 px-md-4  bg-white">
+		<h5 class="my-0 mr-md-auto font-weight-normal">
+			<img class="p-2" src="{{ url('img/icons/logo.svg')}}" alt="Just Home logo" class="c-immo-card__symbol" />
+			JustHome
+		</h5>
+		<nav class="my-2 my-md-0 mr-md-3 nav nav-underline">
+			<a class="px-2  nav-link  text-dark" href="#">Homes</a>
+			<a class="px-2 nav-link text-dark " href="#">Categories</a>
+			<a class="px-2 nav-link text-dark " href="#">Locations</a>
+		</nav>
+	</div>
+
+	<!-- Hero section -->
+	<div class="container-fluid ">
+		<div class="px-3 py-3 pt-md-5 pb-md-4 mx-5 text-center c-hero">
+			<p class=" c-hero__text c-hero__text--em ">Let us find your future home</p>
+			<h1 class="display-4 c-hero__title">Just Like Home</h1>
+			<div class="c-hero__info">
+				<div class="c-hero__detail">
+					<p class="c-hero__number">680</p>
+					<p class="c-hero__label">Awards Won</p>
+				</div>
+				<div class="c-hero__detail">
+					<p class="c-hero__number">8K+</p>
+					<p class="c-hero__label">Happy Customers</p>
+				</div>
+				<div class="c-hero__detail">
+					<p class="c-hero__number">500+</p>
+					<p class="c-hero__label">Properties Ready</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Categories section -->
+	<div class="container-fluid ">
+		<div class="c-categories">
+			<h2>Featured Categories</h2>
+			<p class="c-categories__subtext">What type of house are you looking for?</p>
+			<div class="c-categories__cards">
+				<a href="#" class="c-categories__card">
+					<div class="c-categories__info">
+						<h3 class="c-categories__title">Town House</h3>
+						<p class="">2 properties</p>
+					</div>
+					<div class="c-categories__imgcontainer">
+						<img src="img/town-houses.jpeg" alt="" class="c-categories__img" />
+					</div>
+				</a>
+
+				<a href="#" class="c-categories__card">
+					<div class="c-categories__info">
+						<h3 class="c-categories__title">Modern Villa</h3>
+						<p class="">10 properties</p>
+					</div>
+					<div class="c-categories__imgcontainer">
+						<img src="img/modern-villa.jpeg" alt="" class="c-categories__img" />
+					</div>
+				</a>
+
+				<a href="#" class="c-categories__card">
+					<div class="c-categories__info">
+						<h3 class="c-categories__title">Apartment</h3>
+						<p class="">3 properties</p>
+					</div>
+					<div class="c-categories__imgcontainer">
+						<img src="img/apartment.jpeg" alt="" class="c-categories__img" />
+					</div>
+				</a>
+
+				<a href="#" class="c-categories__card">
+					<div class="c-categories__info">
+						<h3 class="c-categories__title">Office</h3>
+						<p class="">3 properties</p>
+					</div>
+					<div class="c-categories__imgcontainer">
+						<img src="img/town-houses.jpeg" alt="" class="c-categories__img" />
+					</div>
+				</a>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Homes for you -->
+	<div class="container u-background-grey">
+		<h2 class="pt-5">Homes For You</h2>
+		<p class="text-center">Based on your interests.</p>
+
+		<div class="row mt-5 justify-content-center">
+			<!-- immo card -->
+			<div class="col-3">
+				<a href="#" class="c-immo-card">
+					<div class="c-immo-card__imgcontainer">
+						<img src="{{url('img/houseOne.jpeg')}}" alt="" class="c-immo-card__img" />
+						<div class="c-immo-card__tag c-immo-card__tag--sale">
+							<p>For sale</p>
+						</div>
+
+					</div>
+					<div class="c-immo-card__infocontainer">
+						<div class="c-immo-card__heading">
+							<h3 class="c-immo-card__title">Skyper Pool Apartment</h3>
+							<p class="c-immo-card__price">$280.000</p>
+						</div>
+						<div class="c-immo-card__location">
+							<img src="{{url('img/icons/location.svg')}}" alt="">
+							<p> 1020 Bloomingdale Ave
+							</p>
+
+						</div>
+						<div class="c-immo-card__details">
+							<div>
+								<img src="{{url('img/icons/bed.svg')}}" alt="">
+								<p>4 beds
+								</p>
+							</div>
+							<div>
+								<img src="{{url('img/icons/bath.svg')}}" alt="">
+								<p>2 baths
+								</p>
+							</div>
+							<div>
+								<img src="{{url('img/icons/sqf.svg')}}" alt="">
+								<p>70m²
+								</p>
+							</div>
+						</div>
+
+					</div>
+				</a>
+			</div>
+			<!-- immo card -->
+			<div class="col-3">
+				<a href="#" class="c-immo-card">
+					<div class="c-immo-card__imgcontainer">
+						<img src="{{url('img/houseOne.jpeg')}}" alt="" class="c-immo-card__img" />
+						<div class="c-immo-card__tag c-immo-card__tag--sale">
+							<p>For sale</p>
+						</div>
+
+					</div>
+					<div class="c-immo-card__infocontainer">
+						<div class="c-immo-card__heading">
+							<h3 class="c-immo-card__title">Skyper Pool Apartment</h3>
+							<p class="c-immo-card__price">$280.000</p>
+						</div>
+						<div class="c-immo-card__location">
+							<img src="{{url('img/icons/location.svg')}}" alt="">
+							<p> 1020 Bloomingdale Ave
+							</p>
+
+						</div>
+						<div class="c-immo-card__details">
+							<div>
+								<img src="{{url('img/icons/bed.svg')}}" alt="">
+								<p>4 beds
+								</p>
+							</div>
+							<div>
+								<img src="{{url('img/icons/bath.svg')}}" alt="">
+								<p>2 baths
+								</p>
+							</div>
+							<div>
+								<img src="{{url('img/icons/sqf.svg')}}" alt="">
+								<p>70m²
+								</p>
+							</div>
+						</div>
+
+					</div>
+				</a>
+			</div>
+			<!-- immo card -->
+			<div class="col-3">
+				<a href="#" class="c-immo-card">
+					<div class="c-immo-card__imgcontainer">
+						<img src="{{url('img/houseOne.jpeg')}}" alt="" class="c-immo-card__img" />
+						<div class="c-immo-card__tag c-immo-card__tag--rent">
+							<p>For rent</p>
+						</div>
+
+					</div>
+					<div class="c-immo-card__infocontainer">
+						<div class="c-immo-card__heading">
+							<h3 class="c-immo-card__title">Skyper Pool Apartment</h3>
+							<p class="c-immo-card__price">$280.000</p>
+						</div>
+						<div class="c-immo-card__location">
+							<img src="{{url('img/icons/location.svg')}}" alt="">
+							<p> 1020 Bloomingdale Ave
+							</p>
+
+						</div>
+						<div class="c-immo-card__details">
+							<div>
+								<img src="{{url('img/icons/bed.svg')}}" alt="">
+								<p>4 beds
+								</p>
+							</div>
+							<div>
+								<img src="{{url('img/icons/bath.svg')}}" alt="">
+								<p>2 baths
+								</p>
+							</div>
+							<div>
+								<img src="{{url('img/icons/sqf.svg')}}" alt="">
+								<p>70m²
+								</p>
+							</div>
+						</div>
+
+					</div>
+				</a>
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- locations -->
+	<div class="container">
+		<h2 class="pt-5">Locations</h2>
+		<p class="text-center">Already found your ideal location?</p>
+
+		<div class="row justify-content-center c-locations text-center">
+			<div class="col-2">
+				<ul>
+					<li class="pb-2">
+						<a class="" href="#"> Gent
+						</a>
+					</li>
+					<li class="pb-2">
+
+						<a class="" href="#"> Kortrijk
+						</a>
+					</li>
+					<li class="pb-2">
+						<a class="" href="#"> Brussel
+						</a>
+					</li>
+					<li class="pb-2">
+
+						<a class="" href="#"> Lokeren
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-2">
+				<ul>
+					<li class="pb-2">
+						<a class="" href="#"> Antwerpen
+						</a>
+					</li>
+					<li class="pb-2">
+
+						<a class="" href="#"> Gent
+						</a>
+					</li>
+					<li class="pb-2">
+						<a class="" href="#"> Gent
+						</a>
+					</li>
+					<li class="pb-2">
+
+						<a class="" href="#"> Gent
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-2">
+				<ul>
+					<li class="pb-2">
+						<a class="" href="#"> Gent
+						</a>
+					</li>
+					<li class="pb-2">
+
+						<a class="" href="#"> Gent
+						</a>
+					</li>
+					<li class="pb-2">
+						<a class="" href="#"> Gent
+						</a>
+					</li>
+					<li class="pb-2">
+
+						<a class="" href="#"> Gent
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-2">
+				<ul>
+					<li class="pb-2">
+						<a class="" href="#"> Gent
+						</a>
+					</li>
+					<li class="pb-2">
+
+						<a class="" href="#"> Gent
+						</a>
+					</li>
+					<li class="pb-2">
+						<a class="" href="#"> Gent
+						</a>
+					</li>
+					<li class="pb-2">
+
+						<a class="" href="#"> Gent
+						</a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- reviews -->
+	<div class="container u-background-grey">
+		<h2 class="pt-5">What our customers say about us</h2>
+		<p class="text-center">Need a little extra motivation?</p>
+		<div class="row mt-5 justify-content-center">
+			<!-- review card -->
+			<div class="col-3">
+				<div class="c-review-card">
+					<div class="c-review-card__info">
+						<div>
+							<h4>Cameron Williamson</h4>
+							<p>Gent</p>
+						</div>
+						<img src="{{url('img/icons/quote.svg')}}" alt="">
+					</div>
+					<p>
+						Searches for multiplexes, property comparisons,
+						and the loan estimator. Works great. Lorem
+						ipsum dolor sit amet, consectetur adipiscing elit,
+						sed do eiusmod tempor incididunt ut labore et
+						dores.
+					</p>
+
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="c-review-card">
+					<div class="c-review-card__info">
+						<div>
+							<h4>Cameron Williamson</h4>
+							<p>Gent</p>
+						</div>
+						<img src="{{url('img/icons/quote.svg')}}" alt="">
+					</div>
+					<p>
+						Searches for multiplexes, property comparisons,
+						and the loan estimator. Works great. Lorem
+						ipsum dolor sit amet, consectetur adipiscing elit,
+						sed do eiusmod tempor incididunt ut labore et
+						dores.
+					</p>
+
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="c-review-card">
+					<div class="c-review-card__info">
+						<div>
+							<h4>Cameron Williamson</h4>
+							<p>Gent</p>
+						</div>
+						<img src="{{url('img/icons/quote.svg')}}" alt="">
+					</div>
+					<p>
+						Searches for multiplexes, property comparisons,
+						and the loan estimator. Works great. Lorem
+						ipsum dolor sit amet, consectetur adipiscing elit,
+						sed do eiusmod tempor incididunt ut labore et
+						dores.
+					</p>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- realtors -->
+	<div class="container">
+		<h2 class="pt-5">Meet our team</h2>
+		<p class="text-center">These realtors are ready to help you!</p>
+		<div class="row mt-5 justify-content-center">
+			<!-- realtor card -->
+			<div class="col-2">
+				<div class="c-realtor">
+
+					<img src="{{url('img/RealEstateAgent-one.jpeg')}}" alt="">
+					<div>
+						<h4 class="c-realtor__name">Cameron Williamson</h4>
+						<p>Region East Flanders</p>
+					</div>
+
+				</div>
+			</div>
+			<!-- realtor card -->
+			<div class="col-2">
+				<div class="c-realtor">
+
+					<img src="{{url('img/RealEstateAgent-one.jpeg')}}" alt="">
+					<div>
+						<h4 class="c-realtor__name">Cameron Williamson</h4>
+						<p>Region East Flanders</p>
+					</div>
+
+				</div>
+			</div>
+			<!-- realtor card -->
+			<div class="col-2">
+				<div class="c-realtor">
+
+					<img src="{{url('img/RealEstateAgent-one.jpeg')}}" alt="">
+					<div>
+						<h4 class="c-realtor__name">Cameron Williamson</h4>
+						<p>Region East Flanders</p>
+					</div>
+
+				</div>
+			</div>
+			<!-- realtor card -->
+			<div class="col-2">
+				<div class="c-realtor">
+
+					<img src="{{url('img/RealEstateAgent-one.jpeg')}}" alt="">
+					<div>
+						<h4 class="c-realtor__name">Cameron Williamson</h4>
+						<p>Region East Flanders</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- footer -->
+	<div class="container-fluid u-background-grey  ">
+	<div class="">
+			<footer class="c-footer">
+				<h5 class="my-0 mr-md-auto font-weight-normal">
+					<img class="p-2" src="{{ url('img/icons/logo.svg')}}" alt="Just Home logo" class="c-immo-card__symbol" />
+					JustHome
+				</h5>
+				<nav class="my-2 my-md-0 mr-md-3 nav nav-underline">
+					<a class="px-2  nav-link  text-dark" href="#">Homes</a>
+					<a class="px-2 nav-link text-dark " href="#">Categories</a>
+					<a class="px-2 nav-link text-dark " href="#">Locations</a>
+				</nav>
+				<div class="c-footer__socials">
+					<p>Follow Us</p>
+					<a href="#"><img src="{{url('img/icons/facebook.svg')}}" alt="facebook"></a>
+					<a href="#"><img src="{{url('img/icons/instagram.svg')}}" alt="instagram"></a>
+					<a href="#"><img src="{{url('img/icons/youtube.svg')}}" alt="youtube"></a>
+
+				</div>
+			</footer>
+	</div>
+	</div>
+
+</body>
+
 </html>

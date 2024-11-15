@@ -1,0 +1,44 @@
+.c-categories {
+    margin: 10rem 0; 
+
+    &__subtext {
+        text-align: center;
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: row;
+        gap:1rem;
+        justify-content: center;
+        margin-top: 2.5rem;
+
+    }
+
+    &__card {
+        width:12rem;
+        border-radius: 12px;
+        overflow:hidden;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    
+    }
+
+    &__img {
+        width: 12rem;
+       object-fit: cover;
+        position:relative;
+        z-index: -1;
+        margin-top: -8rem;
+
+    }
+
+    &__info {
+        color: black;
+        padding: 2rem;
+        line-height: 1;
+
+    }
+}

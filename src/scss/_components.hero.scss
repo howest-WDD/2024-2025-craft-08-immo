@@ -1,0 +1,55 @@
+.c-hero {
+  background-image: url("img/hero-image.jpeg");
+  background-size: cover;
+  border-radius: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+  color: white;
+
+  &__title {
+    font-size: 3.5rem;
+    font-weight: 500;
+  }
+
+  &__text {
+    border: white 1px solid;
+    border-radius: 50px;
+    padding: 0.5rem 1.5rem;
+    margin-top: 12vh;
+    width: auto;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    display: inline-block;
+  }
+
+  &__info {
+    background-image: url("img/div-element.svg");
+    background-repeat: no-repeat;
+    color: black;
+    position: absolute;
+    top: 82vh;
+    left: 50vw;
+    width: 49vw;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+    padding: 1rem 10vw 0 8vw;
+  }
+
+  &__detail {
+    width: 7rem;
+  }
+
+  &__number {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: -0.3rem;
+  }
+
+  &__label {
+    font-size: 0.8rem;
+  }
+}

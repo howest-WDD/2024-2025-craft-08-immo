@@ -1,0 +1,15 @@
+.c-realtor {
+  display: flex;
+  flex-direction: column;
+  font-size: .8rem;
+  margin-bottom: 5rem;
+  & img {
+    height: 15rem; 
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+  }
+
+
+}

@@ -1,4 +1,4 @@
-dateModified: 1726233031
+dateModified: 1731658361
 email:
   fromEmail: voornaam.naam@howest.be
   fromName: 'Craft Template'
@@ -6,8 +6,15 @@ email:
 meta:
   __names__:
     10d2260b-dd05-4a49-abb3-800017e15928: 'Craft Template' # Craft Template
+    21d6f9ae-1d22-490e-bd89-d6ded5d514ac: Simple # Simple
+    af810d12-eed2-4a84-80f5-1e324995b681: test # test
+    bfc5caff-33ac-495a-8336-7abe2887b021: 'Public Schema' # Public Schema
     f6eaef1f-2f88-4856-8eee-c5ae9620f572: 'Craft Template' # Craft Template
 plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
   vite:
     edition: standard
     enabled: true
@@ -16,7 +23,7 @@ system:
   edition: solo
   live: true
   name: 'Craft Template'
-  schemaVersion: 5.3.0.2
+  schemaVersion: 5.5.0.0
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false

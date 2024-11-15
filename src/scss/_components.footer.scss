@@ -1,0 +1,19 @@
+.c-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 6rem;
+    padding: 2rem;
+    align-items: center;
+
+    &__socials {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+
+
+        & p {
+            font-weight: 600;
+        }
+    }
+}
